@@ -261,9 +261,9 @@ rm -rf tmp1.txt tmp2.txt tmp3.txt
 
 echo "上海电信,#genre#" >zubo_fofa.txt
 cat txt/Shanghai_103.txt >>zubo_fofa.txt
-echo "江西,#genre#" >>zubo_fofa.txt
+echo "江西频道,#genre#" >>zubo_fofa.txt
 cat txt/Jiangxi_105.txt >>zubo_fofa.txt
-echo "江苏,#genre#" >>zubo_fofa.txt
+echo "江苏频道,#genre#" >>zubo_fofa.txt
 cat txt/Jiangsu.txt >>zubo_fofa.txt
 #echo "北京电信,#genre#" >>zubo_fofa.txt
 #cat txt/Beijing_dianxin_186.txt >>zubo_fofa.txt
@@ -293,7 +293,7 @@ echo "甘肃电信,#genre#" >>zubo_fofa.txt
 cat txt/Gansu_105.txt >>zubo_fofa.txt
 echo "河北联通,#genre#" >>zubo_fofa.txt
 cat txt/Hebei_313.txt >>zubo_fofa.txt
-echo "陕西,#genre#" >>zubo_fofa.txt
+echo "陕西频道,#genre#" >>zubo_fofa.txt
 cat txt/Sanxi_123.txt >>zubo_fofa.txt
 
 for a in result/*.txt; do echo "";echo "========================= $(basename "$a") ==================================="; cat $a; done

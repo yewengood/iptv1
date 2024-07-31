@@ -230,7 +230,7 @@ echo "上海电信,#genre#" >zubo.txt
 cat txt/Shanghai_103.txt >>zubo.txt
 echo "北京电信,#genre#" >>zubo.txt
 cat txt/Beijing_dianxin_186.txt >>zubo.txt
-echo "江西,#genre#" >>zubo.txt
+echo "江西频道,#genre#" >>zubo.txt
 cat txt/Jiangxi_105.txt >>zubo.txt
 echo "北京联通,#genre#" >>zubo.txt
 cat txt/Beijing_liantong_145.txt >>zubo.txt
@@ -258,7 +258,7 @@ echo "甘肃电信,#genre#" >>zubo.txt
 cat txt/Gansu_105.txt >>zubo.txt
 echo "河北联通,#genre#" >>zubo.txt
 cat txt/Hebei_313.txt >>zubo.txt
-echo "陕西,#genre#" >>zubo.txt
+echo "陕西频道,#genre#" >>zubo.txt
 cat txt/Sanxi_123.txt >>zubo.txt
 
 
