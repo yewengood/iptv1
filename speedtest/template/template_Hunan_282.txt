@@ -204,4 +204,3 @@ CCTV16,http://ipipip/udp/239.76.253.230:9000
 长沙影视HD,http://ipipip/udp/239.76.252.204:9000
 湘西综合HD,http://ipipip/udp/239.76.252.208:9000
 湘西公共HD,http://ipipip/udp/239.76.252.209:9000
-湘西公共HD,http://ipipip/udp/239.76.252.210:9000
