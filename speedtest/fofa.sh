@@ -31,6 +31,7 @@ if [ $# -eq 0 ]; then
   echo "16. 重庆电信（Chongqing_161）" 
   echo "17. 陕西（Sanxi_123）"
   echo "18. 甘肃电信（Gansu_105）"
+  echo "19. 安徽（Anhui_191）"
   echo "0. 全部"
   read -t 10 -p "输入选择或在10秒内无输入将默认选择全部: " city_choice
 
@@ -125,7 +126,7 @@ case $city_choice in
         ;;
     12)
         city="Hubei_90"
-        stream="rtp/239.254.96.96:8550"
+        stream="rtp/239.69.1.40:9880"
         channel_key="湖北电信"
         url_fofa=$(echo  '"udpxy" && country="CN" && region="Hubei" && city="Wuhan" && protocol="http"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
@@ -172,9 +173,16 @@ case $city_choice in
         url_fofa=$(echo  '"udpxy" && country="CN" && region="Gansu" && city="Lanzhou" && protocol="http"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
         ;;
+   19)
+        city="Anhui_191"
+        stream="rtp/238.1.79.27:4328"
+        channel_key="安徽"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Gansu" && city="Lanzhou" && protocol="http"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
     0)
         # 如果选择是“全部选项”，则逐个处理每个选项
-        for option in {1..18}; do
+        for option in {1..19}; do
           bash  "$0" $option  # 假定fofa.sh是当前脚本的文件名，$option将递归调用
         done
         exit 0
@@ -259,41 +267,43 @@ rm -rf tmp1.txt tmp2.txt tmp3.txt
 
 #--------------------合并所有城市的txt文件为:   zubo_fofa.txt-----------------------------------------
 
-echo "上海频道,#genre#" >zubo_fofa.txt
+echo "📡  上海频道,#genre#" >zubo_fofa.txt
 cat txt/Shanghai_103.txt >>zubo_fofa.txt
-echo "江西频道,#genre#" >>zubo_fofa.txt
+echo "📡  江西频道,#genre#" >>zubo_fofa.txt
 cat txt/Jiangxi_105.txt >>zubo_fofa.txt
-echo "江苏频道,#genre#" >>zubo_fofa.txt
+echo "📡  江苏频道,#genre#" >>zubo_fofa.txt
 cat txt/Jiangsu.txt >>zubo_fofa.txt
-#echo "北京电信,#genre#" >>zubo_fofa.txt
+#echo "📡  北京电信,#genre#" >>zubo_fofa.txt
 #cat txt/Beijing_dianxin_186.txt >>zubo_fofa.txt
-echo "北京联通,#genre#" >>zubo_fofa.txt
+echo "📡  北京联通,#genre#" >>zubo_fofa.txt
 cat txt/Beijing_liantong_145.txt >>zubo_fofa.txt
-echo "湖南频道,#genre#" >>zubo_fofa.txt
+echo "📡  湖南频道,#genre#" >>zubo_fofa.txt
 cat txt/Hunan_282.txt >>zubo_fofa.txt
-echo "四川频道,#genre#" >>zubo_fofa.txt
+echo "📡  四川频道,#genre#" >>zubo_fofa.txt
 cat txt/Sichuan_333.txt >>zubo_fofa.txt
-echo "浙江频道,#genre#" >>zubo_fofa.txt
+echo "📡  浙江频道,#genre#" >>zubo_fofa.txt
 cat txt/Zhejiang_120.txt >>zubo_fofa.txt
-echo "湖北频道,#genre#" >>zubo_fofa.txt
+echo "📡  湖北频道,#genre#" >>zubo_fofa.txt
 cat txt/Hubei_90.txt >>zubo_fofa.txt
-echo "福建频道,#genre#" >>zubo_fofa.txt
+echo "📡  福建频道,#genre#" >>zubo_fofa.txt
 cat txt/Fujian_114.txt >>zubo_fofa.txt
-echo "重庆频道,#genre#" >>zubo_fofa.txt
+echo "📡  重庆频道,#genre#" >>zubo_fofa.txt
 cat txt/Chongqing_161.txt >>zubo_fofa.txt
-echo "广东频道,#genre#" >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
 cat txt/Guangdong_332.txt >>zubo_fofa.txt
-echo "天津频道,#genre#" >>zubo_fofa.txt
+echo "📡  天津频道,#genre#" >>zubo_fofa.txt
 cat txt/Tianjin_160.txt >>zubo_fofa.txt
-echo "河南频道,#genre#" >>zubo_fofa.txt
+echo "📡  安徽频道,#genre#" >>zubo.txt
+cat txt/Anhui_191.txt >>zubo_fofa.txt
+echo "📡  河南频道,#genre#" >>zubo_fofa.txt
 cat txt/Henan_327.txt >>zubo_fofa.txt
-echo "山西频道,#genre#" >>zubo_fofa.txt
+echo "📡  山西频道,#genre#" >>zubo_fofa.txt
 cat txt/Shanxi_117.txt >>zubo_fofa.txt
-echo "甘肃频道,#genre#" >>zubo_fofa.txt
+echo "📡  甘肃频道,#genre#" >>zubo_fofa.txt
 cat txt/Gansu_105.txt >>zubo_fofa.txt
-echo "河北频道,#genre#" >>zubo_fofa.txt
+echo "📡  河北频道,#genre#" >>zubo_fofa.txt
 cat txt/Hebei_313.txt >>zubo_fofa.txt
-echo "陕西频道,#genre#" >>zubo_fofa.txt
+echo "📡  陕西频道,#genre#" >>zubo_fofa.txt
 cat txt/Sanxi_123.txt >>zubo_fofa.txt
 
 for a in result/*.txt; do echo "";echo "========================= $(basename "$a") ==================================="; cat $a; done
