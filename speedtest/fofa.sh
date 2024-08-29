@@ -56,14 +56,14 @@ case $city_choice in
         ;;
     2)
         city="Guangdong_103"
-        stream="udp/239.45.1.4:5140"
+        stream="udp/239.20.0.101:2000"
 	channel_key="广东移动"
         url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
         ;;
     3)
         city="Guangdong_145"
-        stream="rtp/239.3.1.236:2000"
+        stream="rtp/239.0.1.1:5001"
         channel_key="广东联通"
         url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
