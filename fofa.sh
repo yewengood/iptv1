@@ -215,8 +215,8 @@ esac
 
 
 # 使用城市名作为默认文件名，格式为 CityName.ip
-ipfile="ip/${city}.ip"
-only_good_ip="ip/${city}.onlygood.ip"
+ipfile="speedtest/ip/${city}.ip"
+only_good_ip="speedtest/ip/${city}.onlygood.ip"
 rm -f $only_good_ip
 # 搜索最新 IP
 echo "===============从 fofa 检索 ip+端口================="
@@ -238,47 +238,47 @@ while IFS= read -r ip; do
         echo "$output" | grep "succeeded" | awk -v ip="$ip" '{print ip}' >> "$only_good_ip"
     fi
 done < "$ipfile"
-cat ip/Guangdong1.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong2.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong3.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong4.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong5.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong6.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong7.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong8.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong9.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong10.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong11.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong12.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong13.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong14.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong15.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong16.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong17.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong18.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong19.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong20.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong121.onlygood.ip>>ip/Guangdong1.onlygood.ip
+cat speedtest/speedtest/ip/Guangdong1.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong2.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong3.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong4.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong5.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong6.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong7.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong8.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong9.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong10.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong11.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong12.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong13.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong14.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong15.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong16.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong17.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong18.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong19.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong20.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+echo "" >>speedtest/speedtest/ip/Guangdong1.onlygood.ip
+cat speedtest/ip/Guangdong121.onlygood.ip>>speedtest/speedtest/ip/Guangdong1.onlygood.ip
 
 
 echo "===============检索完成================="
