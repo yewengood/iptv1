@@ -13,9 +13,28 @@ i=0
 
 if [ $# -eq 0 ]; then
   echo "请选择城市："
-   echo "1. 广东电信（Guangdong_332）"
-   echo "2. 广东移动（Guangdong_103）"
-   echo "3. 广东联通（Guangdong_145）"
+   echo "1. 广东广州（Guangdong1）"
+   echo "2. 广东深圳（Guangdong2）"
+   echo "3. 广东东莞（Guangdong3）"
+    echo "4. 广东中山（Guangdong4）"
+       echo "5. 广东韶关（Guangdong5）"
+   echo "6. 广东珠海（Guangdong6）"
+   echo "7. 广东汕头（Guangdong7）"
+    echo "8. 广东汕尾（Guangdong8）"
+       echo "9. 广东佛山（Guangdong9）"
+   echo "10. 广东河源（Guangdong10）"
+   echo "11. 广东梅州（Guangdong11）"
+    echo "12. 广东阳江（Guangdong12）"
+       echo "13. 广东江门（Guangdong13）"
+   echo "14. 广东茂名（Guangdong14）"
+   echo "15. 广东湛江（Guangdong15）"
+    echo "16. 广东肇庆（Guangdong16）"
+       echo "17. 广东清远（Guangdong17）"
+   echo "18. 广东惠州（Guangdong18）"
+   echo "19. 广东云浮（Guangdong19）"
+    echo "20. 广东揭阳（Guangdong20）"
+       echo "21. 广东潮州（Guangdong21）"
+
   
   echo "0. 全部"
   read -t 10 -p "输入选择或在10秒内无输入将默认选择全部: " city_choice
@@ -32,27 +51,153 @@ fi
 # 根据用户选择设置城市和相应的stream
 case $city_choice in
     1)
-        city="Guangdong_332"
+        city="Guangdong1"
         stream="udp/239.0.1.1:5001"
-        channel_key="广东电信"
-        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Foshan"' | base64 |tr -d '\n')
+        channel_key="广东广州"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Guangzhou"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
         ;;
     2)
-        city="Guangdong_103"
+        city="Guangdong2"
         stream="udp/239.0.1.1:5001"
-	channel_key="广东移动"
-        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Shanwei"' | base64 |tr -d '\n')
+	channel_key="广东深圳"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Shenzhen"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
         ;;
     3)
-        city="Guangdong_145"
+        city="Guangdong3"
         stream="rtp/239.0.1.1:5001"
-        channel_key="广东联通"
+        channel_key="广东东莞"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Dongguan"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    4)
+        city="Guangdong4"
+        stream="udp/239.0.1.1:5001"
+        channel_key="广东中山"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Zhongshan"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    5)
+        city="Guangdong5"
+        stream="udp/239.0.1.1:5001"
+	channel_key="广东肇庆"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Zhaoqing"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    6)
+        city="Guangdong6"
+        stream="rtp/239.0.1.1:5001"
+        channel_key="广东珠海"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Zhuhai"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    7)
+        city="Guangdong7"
+        stream="udp/239.0.1.1:5001"
+        channel_key="广东汕头"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Shantou"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    8)
+        city="Guangdong8"
+        stream="udp/239.0.1.1:5001"
+	channel_key="广东汕尾"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Shanwei"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    9)
+        city="Guangdong9"
+        stream="rtp/239.0.1.1:5001"
+        channel_key="广东佛山"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Foshan"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    10)
+        city="Guangdong10"
+        stream="udp/239.0.1.1:5001"
+        channel_key="广东河源"
         url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Heyuan"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
         ;;
-    
+    11)
+        city="Guangdong11"
+        stream="udp/239.0.1.1:5001"
+	channel_key="广东梅州"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Meizhou"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    12)
+        city="Guangdong12"
+        stream="rtp/239.0.1.1:5001"
+        channel_key="广东阳江"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Yangjiang"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    13)
+        city="Guangdong13"
+        stream="rtp/239.0.1.1:5001"
+        channel_key="广东江门"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Jiangmen"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    14)
+        city="Guangdong14"
+        stream="udp/239.0.1.1:5001"
+        channel_key="广东茂名"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Maoming"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    15)
+        city="Guangdong15"
+        stream="udp/239.0.1.1:5001"
+	channel_key="广东湛江"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Zhanjiang"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    16)
+        city="Guangdong16"
+        stream="rtp/239.0.1.1:5001"
+        channel_key="广东肇庆"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Zhaoqing"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    17)
+        city="Guangdong17"
+        stream="udp/239.0.1.1:5001"
+        channel_key="广东清远"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Qingyuan"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    18)
+        city="Guangdong18"
+        stream="udp/239.0.1.1:5001"
+	channel_key="广东惠州"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Huizhou"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    19)
+        city="Guangdong19"
+        stream="rtp/239.0.1.1:5001"
+        channel_key="广东云浮"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Yunfu"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    20)
+        city="Guangdong20"
+        stream="udp/239.0.1.1:5001"
+        channel_key="广东揭阳"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Jieyang"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+    21)
+        city="Guangdong21"
+        stream="udp/239.0.1.1:5001"
+	channel_key="广东潮州"
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="chaozhou"' | base64 |tr -d '\n')
+        url_fofa="https://fofa.info/result?qbase64="$url_fofa
+        ;;
+   
     0)
         # 如果选择是“全部选项”，则逐个处理每个选项
         for option in {1..19}; do
