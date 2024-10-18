@@ -35,21 +35,21 @@ case $city_choice in
         city="Guangdong_332"
         stream="udp/239.0.1.1:5001"
         channel_key="广东电信"
-        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Shenzhen"' | base64 |tr -d '\n')
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Shaoguan"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
         ;;
     2)
         city="Guangdong_103"
         stream="udp/239.0.1.1:5001"
 	channel_key="广东移动"
-        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Guangzhou"' | base64 |tr -d '\n')
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Zhuhai"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
         ;;
     3)
         city="Guangdong_145"
         stream="rtp/239.0.1.1:5001"
         channel_key="广东联通"
-        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Zhongshan"' | base64 |tr -d '\n')
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Shantou"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
         ;;
     
