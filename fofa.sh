@@ -307,29 +307,29 @@ while IFS= read -r line; do
 done < "$only_good_ip"
 
 rm -f zubo.tmp
-awk '/M|k/{print $2"  "$1}' "speedtest_${city}_$time.log" | sort -n -r >"result/result_fofa_${city}.txt"
-cat "result/result_fofa_${city}.txt"
-ip1=$(awk 'NR==1{print $2}' result/result_fofa_${city}.txt)
-ip2=$(awk 'NR==2{print $2}' result/result_fofa_${city}.txt)
-ip3=$(awk 'NR==3{print $2}' result/result_fofa_${city}.txt)
+awk '/M|k/{print $2"  "$1}' "speedtest_${city}_$time.log" | sort -n -r >"speedtest/result/result_fofa_${city}.txt"
+cat "speedtest/result/result_fofa_${city}.txt"
+ip1=$(awk 'NR==1{print $2}' speedtest/result/result_fofa_${city}.txt)
+ip2=$(awk 'NR==2{print $2}' speedtest/result/result_fofa_${city}.txt)
+ip3=$(awk 'NR==3{print $2}' speedtest/result/result_fofa_${city}.txt)
 rm -f "speedtest_${city}_$time.log"
 
 # 用 3 个最快 ip 生成对应城市的 txt 文件
-program="template/template_${city}.txt"
+program="speedtest/template/template_${city}.txt"
 
 sed "s/ipipip/$ip1/g" "$program" > tmp1.txt
 sed "s/ipipip/$ip2/g" "$program" > tmp2.txt
 sed "s/ipipip/$ip3/g" "$program" > tmp3.txt
-cat tmp1.txt tmp2.txt tmp3.txt > "txt/fofa_${city}.txt"
+cat tmp1.txt tmp2.txt tmp3.txt > "speedtest/txt/fofa_${city}.txt"
 
 rm -rf tmp1.txt tmp2.txt tmp3.txt
 rm -rf live.txt
 
 #--------------------合并所有城市的txt文件为:   zubo_fofa.txt-----------------------------------------
 echo "📡  广东频道,#genre#" >>live.txt
-cat txt/fofa_Guangdong1.txt >>live.txt
+cat speedtest/txt/fofa_Guangdong1.txt >>live.txt
 
 
 
 
-for a in result/*.txt; do echo "";echo "========================= $(basename "$a") ==================================="; cat $a; done
+for a in speedtest/result/*.txt; do echo "";echo "========================= $(basename "$a") ==================================="; cat $a; done
