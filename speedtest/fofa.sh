@@ -16,23 +16,7 @@ if [ $# -eq 0 ]; then
    echo "1. 广东电信（Guangdong_332）"
    echo "2. 广东移动（Guangdong_103）"
    echo "3. 广东联通（Guangdong_145）"
-  # echo "3. 四川电信（Sichuan_333）"
-  # echo "4. 浙江电信（Zhejiang_120）"
-  # echo "5. 北京电信（Beijing_dianxin_186）"
-  # echo "6. 江西（Jiangxi_105）"
-  # echo "7. 江苏（Jiangsu）"
- 
-  # echo "9. 河南电信（Henan_327）"
-  # echo "10. 山西电信（Shanxi_117）"
- #  echo "11. 天津联通（Tianjin_160）"
-  # echo "12. 湖北电信（Hubei_90）"
-  # echo "13. 福建电信（Fujian_114）"
- #  echo "14. 湖南电信（Hunan_282）"
- #  echo "15. 河北联通（Hebei_313）"
- #  echo "16. 重庆电信（Chongqing_161）" 
-  # echo "17. 陕西（Sanxi_123）"
-  # echo "18. 广西（Guangxi_163）"
-  # echo "19. 安徽（Anhui_191）"
+  
   echo "0. 全部"
   read -t 10 -p "输入选择或在10秒内无输入将默认选择全部: " city_choice
 
@@ -49,23 +33,23 @@ fi
 case $city_choice in
     1)
         city="Guangdong_332"
-        stream="udp/239.77.1.98:5146"
+        stream="udp/239.0.1.1:5001"
         channel_key="广东电信"
-        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http"' | base64 |tr -d '\n')
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Shenzhen"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
         ;;
     2)
         city="Guangdong_103"
-        stream="udp/239.20.0.101:2000"
+        stream="udp/239.0.1.1:5001"
 	channel_key="广东移动"
-        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http"' | base64 |tr -d '\n')
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Guangzhou"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
         ;;
     3)
         city="Guangdong_145"
         stream="rtp/239.0.1.1:5001"
         channel_key="广东联通"
-        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http"' | base64 |tr -d '\n')
+        url_fofa=$(echo  '"udpxy" && country="CN" && region="Guangdong" && protocol="http" && city="Zhongshan"' | base64 |tr -d '\n')
         url_fofa="https://fofa.info/result?qbase64="$url_fofa
         ;;
     
@@ -156,43 +140,12 @@ rm -rf tmp1.txt tmp2.txt tmp3.txt
 
 #--------------------合并所有城市的txt文件为:   zubo_fofa.txt-----------------------------------------
 
-echo "📡  上海频道,#genre#" >zubo_fofa.txt
-cat txt/Shanghai_103.txt >>zubo_fofa.txt
-echo "📡  江西频道,#genre#" >>zubo_fofa.txt
-cat txt/Jiangxi_105.txt >>zubo_fofa.txt
-echo "📡  江苏频道,#genre#" >>zubo_fofa.txt
-cat txt/Jiangsu.txt >>zubo_fofa.txt
-#echo "📡  北京电信,#genre#" >>zubo_fofa.txt
-#cat txt/Beijing_dianxin_186.txt >>zubo_fofa.txt
-echo "📡  北京联通,#genre#" >>zubo_fofa.txt
-cat txt/Beijing_liantong_145.txt >>zubo_fofa.txt
-echo "📡  湖南频道,#genre#" >>zubo_fofa.txt
-cat txt/Hunan_282.txt >>zubo_fofa.txt
-echo "📡  四川频道,#genre#" >>zubo_fofa.txt
-cat txt/Sichuan_333.txt >>zubo_fofa.txt
-echo "📡  浙江频道,#genre#" >>zubo_fofa.txt
-cat txt/Zhejiang_120.txt >>zubo_fofa.txt
-echo "📡  湖北频道,#genre#" >>zubo_fofa.txt
-cat txt/Hubei_90.txt >>zubo_fofa.txt
-echo "📡  福建频道,#genre#" >>zubo_fofa.txt
-cat txt/Fujian_114.txt >>zubo_fofa.txt
-echo "📡  重庆频道,#genre#" >>zubo_fofa.txt
-cat txt/Chongqing_161.txt >>zubo_fofa.txt
-echo "📡  广东频道,#genre#" >>zubo_fofa.txt
 cat txt/Guangdong_332.txt >>zubo_fofa.txt
-echo "📡  天津频道,#genre#" >>zubo_fofa.txt
-cat txt/Tianjin_160.txt >>zubo_fofa.txt
-echo "📡  安徽频道,#genre#" >>zubo.txt
-cat txt/Anhui_191.txt >>zubo_fofa.txt
-echo "📡  河南频道,#genre#" >>zubo_fofa.txt
-cat txt/Henan_327.txt >>zubo_fofa.txt
-echo "📡  山西频道,#genre#" >>zubo_fofa.txt
-cat txt/Shanxi_117.txt >>zubo_fofa.txt
-echo "📡  广西频道,#genre#" >>zubo_fofa.txt
-cat txt/Guangxi_163.txt >>zubo_fofa.txt
-echo "📡  河北频道,#genre#" >>zubo_fofa.txt
-cat txt/Hebei_313.txt >>zubo_fofa.txt
-echo "📡  陕西频道,#genre#" >>zubo_fofa.txt
-cat txt/Sanxi_123.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong_103.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong_145.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+
 
 for a in result/*.txt; do echo "";echo "========================= $(basename "$a") ==================================="; cat $a; done
