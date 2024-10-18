@@ -285,12 +285,48 @@ rm -rf tmp1.txt tmp2.txt tmp3.txt
 
 #--------------------合并所有城市的txt文件为:   zubo_fofa.txt-----------------------------------------
 
-cat txt/Guangdong_332.txt >>zubo_fofa.txt
+cat txt/Guangdong1.txt >>zubo_fofa.txt
 echo "📡  广东频道,#genre#" >>zubo_fofa.txt
-cat txt/Guangdong_103.txt >>zubo_fofa.txt
+cat txt/Guangdong2.txt >>zubo_fofa.txt
 echo "📡  广东频道,#genre#" >>zubo_fofa.txt
-cat txt/Guangdong_145.txt >>zubo_fofa.txt
+cat txt/Guangdong3.txt >>zubo_fofa.txt
 echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong4.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong5.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong6.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong7.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong8.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong9.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong10.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong11.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong12.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong13.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong14.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong15.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong16.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong17.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong18.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong19.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong20.txt >>zubo_fofa.txt
+echo "📡  广东频道,#genre#" >>zubo_fofa.txt
+cat txt/Guangdong121.txt >>zubo_fofa.txt
+
 
 
 for a in result/*.txt; do echo "";echo "========================= $(basename "$a") ==================================="; cat $a; done
