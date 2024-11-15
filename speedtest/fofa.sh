@@ -272,47 +272,6 @@ ip2=$(awk 'NR==2{print $2}' result/result_fofa_${city}.txt)
 ip3=$(awk 'NR==3{print $2}' result/result_fofa_${city}.txt)
 rm -f "speedtest_${city}_$time.log"
 
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong2.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong3.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong4.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong5.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong6.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong7.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong8.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong9.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong10.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong11.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong12.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong13.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong14.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong15.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong16.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong17.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong18.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong19.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong20.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong21.txt >>result/result_fofa_Guangdong1.txt
-
 
 # 用 3 个最快 ip 生成对应城市的 txt 文件
 program="template/template_${city}.txt"
