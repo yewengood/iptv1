@@ -273,8 +273,6 @@ ip3=$(awk 'NR==3{print $2}' result/result_fofa_${city}.txt)
 rm -f "speedtest_${city}_$time.log"
 
 echo "" >>result/result_fofa_Guangdong1.txt
-cat result/result_fofa_Guangdong1.txt >>result/result_fofa_Guangdong1.txt
-echo "" >>result/result_fofa_Guangdong1.txt
 cat result/result_fofa_Guangdong2.txt >>result/result_fofa_Guangdong1.txt
 echo "" >>result/result_fofa_Guangdong1.txt
 cat result/result_fofa_Guangdong3.txt >>result/result_fofa_Guangdong1.txt
