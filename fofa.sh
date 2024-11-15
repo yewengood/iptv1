@@ -238,46 +238,47 @@ while IFS= read -r ip; do
         echo "$output" | grep "succeeded" | awk -v ip="$ip" '{print ip}' >> "$only_good_ip"
     fi
 done < "$ipfile"
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong1.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong2.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong3.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong4.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong5.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong6.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong7.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong8.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong9.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong10.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong11.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong12.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong13.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong14.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong15.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong16.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong17.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong18.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong19.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong20.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
-
+echo " " >>speedtest/ip/Guangdong21.onlygood.ip
 cat speedtest/ip/Guangdong21.onlygood.ip>>speedtest/ip/Guangdong21.onlygood.ip
 
 
