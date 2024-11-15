@@ -238,48 +238,6 @@ while IFS= read -r ip; do
         echo "$output" | grep "succeeded" | awk -v ip="$ip" '{print ip}' >> "$only_good_ip"
     fi
 done < "$ipfile"
-cat ip/Guangdong1.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong2.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong3.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong4.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong5.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong6.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong7.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong8.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong9.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong10.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong11.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong12.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong13.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong14.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong15.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong16.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong17.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong18.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong19.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong20.onlygood.ip>>ip/Guangdong1.onlygood.ip
-echo "" >>ip/Guangdong1.onlygood.ip
-cat ip/Guangdong121.onlygood.ip>>ip/Guangdong1.onlygood.ip
-
 
 echo "===============检索完成================="
 
