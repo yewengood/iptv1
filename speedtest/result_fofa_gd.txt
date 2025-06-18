@@ -1,7 +1,7 @@
-1124k  119.34.190.125:2901
-956k  119.34.190.115:2901
-775k  qjrhc2.jydjd.top:2901
-769k  xnzhgc.jydjd.top:2903
-769k  119.32.12.12:2901
-768k  lfdxn.jydjd.top:2903
-161k  119.34.251.7:2903
+774k  lfdxn.jydjd.top:2903
+774k  119.34.190.125:2901
+774k  119.34.190.115:2901
+771k  xnzhgc.jydjd.top:2903
+771k  119.32.12.12:2901
+767k  qjrhc2.jydjd.top:2901
+202k  xndhx.jydjd.top:2904
