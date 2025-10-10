@@ -24,7 +24,6 @@ if [ ! -f "ip/${city}.onlygood.ip" ]; then
     exit 1
 fi
 
-
 lines=$(wc -l < "ip/${city}.onlygood.ip")
 echo "【ip/${city}.onlygood.ip】内 ip 共计 $lines 个"
 
